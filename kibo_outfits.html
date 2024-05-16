@@ -50,6 +50,35 @@
         .contact-info {
             font-size: 1.2em;
         }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: white;
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .product p {
+            color: #666;
+        }
+        .product .price {
+            color: #e67e22;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -81,7 +110,21 @@
             <div class="golden-strip">
                 <h2 class="section-title">Products</h2>
             </div>
-            <p>We offer a wide range of high-quality suits and accessories to fit your professional wardrobe needs. Stay tuned for updates on our latest collections!</p>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Men's Suit</h3>
+                    <p>A classic men's suit perfect for any formal occasion.</p>
+                    <p class="price">$199.99</p>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Ladies' Suit</h3>
+                    <p>An elegant ladies' suit suitable for professional settings.</p>
+                    <p class="price">$179.99</p>
+                </div>
+                <!-- Add more products here -->
+            </div>
         </section>
         <section id="contact">
             <div class="golden-strip">
